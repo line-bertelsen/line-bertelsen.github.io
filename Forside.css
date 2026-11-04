@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+#header {
+     background-color: #232523;
+     padding: 25px 40px; /* Jeg gør den grå boks højere */ 
+     display: grid;
+     grid-template-columns: max-content auto;
+}
+
+h1, h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    
+}
+
+/* Jeg styler navigationsmenuen */ 
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    align-self: end;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Jeg stiller menupunkterne vandret ved siden af hinanden */ 
+#nav li {
+  display: inline-block; /* Jeg gør så blok-elementer står på en vandret række */ 
+  margin-right: 20px; /* Jeg skaber afstand mellem de enkelte menupunkter */ 
+}
+
+/* Jeg styler selve linksene */ 
+#nav li a {
+  color: #ffffff;  /* Jeg gør teksten hvid i stedet */
+  text-decoration: none; /* Jeg fjerner den blå understregning */ 
+  font-weight: bold; /* Jeg gør teksten tykkere */ 
+  font-size: 18px; /* Jeg sætter tekststørrelsen */ 
+  padding: 8px 14px; /* Jeg giver klikbar luft omkring teksten */
+  border-radius: 4px; /* Jeg giver knapperne svagt afrundede hjørner */ 
+}
+
+/* Jeg laver hover-effekt når musen føres over et af linkene */ 
+  #nav li a:hover {
+    background-color:#455C37;; /* Jeg skifter til grøn farve ved hover */
+  }
+
+ /* Container omkring bannerbilledet */
+ .banner-container { 
+    width: 100%; /* Fyld hele bredden på skærmen*/ 
+    overflow: hidden; /* Skjuler evt. overskydende billede*/ 
+}
+
+/* Styling af selve det store bannerbillede */ 
+.hero-billede {
+     width: 100%; /* Gør billedet nøjagtigt lige så bredt som navigationsmenuen */ 
+     height: 450px; /* Sætter en fast højde, så det bliver 'meget længere/højere'*/ 
+     object-fit: cover; /* Beskærer billedet flot i midten, så det IKKE bliver strukket skævt */
+      display: block; /* Fjerner et lille usynligt hulrum under billeder */ 
+
+}
+
